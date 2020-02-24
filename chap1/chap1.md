@@ -1,6 +1,7 @@
-#CHAP1
+# CHAP1
 
-##快速排序算法模板 —— 模板题 AcWing 785. 快速排序
+## 快速排序算法模板 —— 模板题 AcWing 785. 快速排序
+
 ```C++
 {
     void quick_sort(int q[], int l, int r)
@@ -16,4 +17,4 @@
     }
     quick_sort(q, l, j), quick_sort(q, j + 1, r);
 }
-}```
+}
