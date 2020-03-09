@@ -16,10 +16,14 @@
     }
     quick_sort(q, l, j), quick_sort(q, j + 1, r);
 }
+
 ```
+
 ## 归并排序算法模板 —— 模板题 AcWing 787. 归并排序
+
 ```C++
-void merge_sort(int q[], int l, int r)
+
+    void merge_sort(int q[], int l, int r)
 {
     if (l >= r) return;
 
@@ -37,4 +41,5 @@ void merge_sort(int q[], int l, int r)
 
     for (i = l, j = 0; i <= r; i ++, j ++ ) q[i] = tmp[j];
 }
+
 ```
