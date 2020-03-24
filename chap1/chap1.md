@@ -43,3 +43,22 @@
 }
 
 ```
+## 高精度整数加法
+
+```C++
+vector<int> add(vector<int> &a, vector<int> &b)
+{
+    vector<int> c;
+    int t = 0;
+    for(int i = 0; i  < a.size() || i < b.size(); i++)
+    {
+        if(i < a.size()) t += a[i];
+        if(i < b.size()) t += b[i];
+        c.push_back(t % 10);
+        t /= 10;
+    }
+    if (t > 0) c.push_back(1);
+    return c;
+}
+
+```
