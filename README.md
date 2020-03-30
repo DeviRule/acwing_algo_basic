@@ -1,4 +1,5 @@
 # acwing_algo_basic
-#template and code to solve the problem
+template and code to solve the problem
 # First Chapter
-# First Video is about binary search and sort
+binary search, quick sort, merge sort, high accuracy calculation, prefix sum 
+ 

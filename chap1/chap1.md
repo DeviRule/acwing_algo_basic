@@ -1,6 +1,7 @@
 # CHAP1
 
-## 快速排序算法模板 —— 模板题 AcWing 785. 快速排序
+## 排序
+### 快速排序算法模板 —— 模板题 AcWing 785. 快速排序
 
 ```C++
     void quick_sort(int q[], int l, int r)
@@ -19,7 +20,7 @@
 
 ```
 
-## 归并排序算法模板 —— 模板题 AcWing 787. 归并排序
+### 归并排序算法模板 —— 模板题 AcWing 787. 归并排序
 
 ```C++
 
@@ -43,7 +44,13 @@
 }
 
 ```
-## 高精度整数加法
+## 二分
+### 整数二分
+
+### 浮点二分
+
+## 高精度
+### 高精度整数加法
 
 ```C++
 vector<int> add(vector<int> &a, vector<int> &b)
@@ -62,3 +69,20 @@ vector<int> add(vector<int> &a, vector<int> &b)
 }
 
 ```
+
+### 高精度减法
+保证A >  B
+
+
+### 一维前缀和
+
+各个前缀和的值
+S<sub>i</sub> = S<sub>i-1</sub> + a<sub>i</sub>
+注意 S<sub>0</sub> = 0
+区间取值
+value between S<sub>l</sub>  and S<sub>r</sub> = S<sub>r</sub> - S<sub>l-1</sub>
+
+### 二维前缀和
+S[i, j] = 第i行j列格子左上部分所有元素的和
+以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵的和为：
+S[x2, y2] - S[x1 - 1, y2] - S[x2, y1 - 1] + S[x1 - 1, y1 - 1]
