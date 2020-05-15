@@ -73,7 +73,10 @@ vector<int> add(vector<int> &a, vector<int> &b)
 ### 高精度减法
 保证A >  B
 
+### 高精度乘法
+multiply each digit in A with B and sum them to get the answer
 
+### 高精度除法
 ### 一维前缀和
 
 各个前缀和的值
